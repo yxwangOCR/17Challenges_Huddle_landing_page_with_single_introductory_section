@@ -20,4 +20,5 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](design/active-states.jpg)
+![](design/mobile-design.jpg)
