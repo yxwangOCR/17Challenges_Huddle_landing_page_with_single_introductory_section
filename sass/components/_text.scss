@@ -1,1 +1,26 @@
-@use "variable"
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2em;
+    text-align: center;
+    color: white;
+    gap: 1.5em;
+
+    h1 {
+        line-height: 1.5em;
+        font-size: 1.6em;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        padding: 0 14px;
+    }
+}

@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 2em;
+    gap: 2em;
+
+    :nth-child(1) {
+        width: 50%;
+    }
+}

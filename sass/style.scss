@@ -1,0 +1,19 @@
+@use "./abstracts/" as *;
+@use "./base/" as *;
+@use "./components/" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $violet;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5em;
+}
