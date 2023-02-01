@@ -33,6 +33,19 @@ button {
   border-radius: 20px;
   padding: 1em 6em;
   color: hsl(257deg, 40%, 49%);
+  -webkit-box-shadow: 1px 0px 11px -1px rgba(0, 0, 0, 0.67);
+  box-shadow: 1px 0px 11px -1px rgba(0, 0, 0, 0.67);
+  margin-top: 1em;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
+}
+@media (min-width: 992px) {
+  button {
+    padding: 1em 4em;
+  }
 }
 
 header {
@@ -40,11 +53,23 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 2em;
-  gap: 2em;
+  margin: 2em;
+  gap: 4em;
 }
 header :nth-child(1) {
   width: 50%;
+}
+@media (min-width: 992px) {
+  header {
+    width: 60%;
+    margin: 1em;
+  }
+  header :nth-child(1) {
+    width: 30%;
+  }
+  header :nth-child(2) {
+    width: 90%;
+  }
 }
 
 ul {
@@ -61,6 +86,18 @@ ul li {
   border-radius: 50%;
   padding: 0.5em;
   border: 1px solid white;
+  cursor: pointer;
+}
+ul li:hover {
+  color: hsl(300deg, 69%, 71%);
+  border: 1px solid hsl(300deg, 69%, 71%);
+}
+@media (min-width: 992px) {
+  ul {
+    position: relative;
+    top: 5rem;
+    left: 14rem;
+  }
 }
 
 main {
@@ -68,21 +105,44 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 2em;
+  margin: 2em;
   text-align: center;
   color: white;
   gap: 1.5em;
 }
 main h1 {
   line-height: 1.5em;
-  font-size: 1.6em;
-  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 main p {
-  font-size: 0.8rem;
-  line-height: 1.5em;
+  font-size: 0.9rem;
+  line-height: 1.8em;
   letter-spacing: 1px;
-  padding: 0 14px;
+  margin-bottom: 1em;
+}
+@media (min-width: 992px) {
+  main {
+    width: 40%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 1em;
+  }
+  main div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 1em;
+  }
+  main h1 {
+    text-align: left;
+    font-size: 1.9rem;
+  }
+  main p {
+    text-align: left;
+    font-size: 0.68rem;
+  }
 }
 
 body {
@@ -90,11 +150,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(257deg, 40%, 49%);
-  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  gap: 5em;
+}
+body .app {
+  max-width: 750px;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  body .app {
+    display: flex;
+    justify-content: center;
+    min-width: 992px;
+  }
 }

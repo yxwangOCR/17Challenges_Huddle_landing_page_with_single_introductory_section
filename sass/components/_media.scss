@@ -15,6 +15,18 @@ ul {
         border-radius: 50%;
         padding: 0.5em;
         border: 1px solid white;
+        cursor: pointer;
+
+        &:hover {
+            color: $magenta;
+            border: 1px solid $magenta;
+        }
+    }
+
+    @include medium {
+        position: relative;
+        top: 5rem;
+        left: 14rem;
     }
 
 }

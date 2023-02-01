@@ -9,11 +9,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $violet;
-    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    gap: 5em;
+
+    .app {
+        max-width: 750px;
+        max-height: 100vh;
+        margin: 0 auto;
+    }
+
+    @include medium {
+        .app {
+            display: flex;
+            justify-content: center;
+            min-width: 992px;
+        }
+    }
 }

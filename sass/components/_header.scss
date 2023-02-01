@@ -7,10 +7,23 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 2em;
-    gap: 2em;
+    margin: 2em;
+    gap: 4em;
 
     :nth-child(1) {
         width: 50%;
+    }
+
+    @include medium {
+        width: 60%;
+        margin: 1em;
+
+        :nth-child(1) {
+            width: 30%;
+        }
+
+        :nth-child(2) {
+            width: 90%;
+        }
     }
 }
