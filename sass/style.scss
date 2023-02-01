@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
-    background-image: url("../images/bg-mobile.svg");
+    background-image: url("images/bg-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $violet;
@@ -21,6 +21,8 @@ body {
     }
 
     @include medium {
+        background-image: url("images/bg-desktop.svg");
+
         .app {
             display: flex;
             justify-content: center;
