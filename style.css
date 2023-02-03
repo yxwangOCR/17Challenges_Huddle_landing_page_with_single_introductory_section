@@ -33,7 +33,6 @@ button {
   border-radius: 20px;
   padding: 1em 6em;
   color: hsl(257deg, 40%, 49%);
-  -webkit-box-shadow: 1px 0px 11px -1px rgba(0, 0, 0, 0.67);
   box-shadow: 1px 0px 11px -1px rgba(0, 0, 0, 0.67);
   margin-top: 1em;
 }
