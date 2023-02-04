@@ -10,7 +10,7 @@ header {
     margin: 2em;
     gap: 4em;
 
-    :nth-child(1) {
+    :nth-child(2) {
         width: 50%;
     }
 
@@ -18,11 +18,11 @@ header {
         width: 60%;
         margin: 1em;
 
-        :nth-child(1) {
+        :nth-child(2) {
             width: 30%;
         }
 
-        :nth-child(2) {
+        :nth-child(4) {
             width: 90%;
         }
     }
